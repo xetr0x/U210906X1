@@ -29,10 +29,10 @@ namespace uppgift1
 
             Console.WriteLine($"antalet ord i meningen är:{wordcount}");
 
-            string[] sub = sentence.Split(' '); 
-            foreach (var word in sub)   
+            string[] sub = sentence.Split(' ');     // splittar upp meningen i ord med hjälp av spaces.
+            foreach (var word in sub)               // för varje space emellan så skriver den ut tecken
             {
-                Console.WriteLine($"{word} ({word.Length})");
+                Console.WriteLine($"{word} ({word.Length})"); // skriver ut ordet och anta tecken i den.
             }
 
         }
