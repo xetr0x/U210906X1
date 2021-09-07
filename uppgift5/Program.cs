@@ -22,7 +22,7 @@ namespace uppgift5
                 else
                 {
                     x = true;
-                    return new[] { close };
+                    return new[] { close }; // en kommentar
                 }
 
             }
