@@ -10,15 +10,14 @@ namespace uppgift6
             Console.WriteLine("vilket tal mellan 1 och 21 tänker jag på? ");
             Random rnd = new Random();
             int number = rnd.Next(1, 21);
-            bool x = true;
-            while (x == true)
+            while (true)
             {
                 int anwser = Convert.ToInt32(Console.ReadLine()); 
 
                 if (anwser == number )
                 {
                     Console.WriteLine($"bra gissat, du svarade rätt, talet är {number}");
-                    x = false;
+                    break;
                 }
                 else
                 {
