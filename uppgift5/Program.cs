@@ -6,7 +6,7 @@ namespace uppgift5
     {
         static void Main(string[] args)
         {
-
+            string words = " ";
              bool x = true;
             while (x == true)  
                 
@@ -17,13 +17,10 @@ namespace uppgift5
                 if ( close == "Avlsuta" || close == "avsluta" || close == "AVSLUTA" ) //If the person writes "avsluta" the program closes. 
                 {
                     x = false;
+                    Console.WriteLine($" Skriv ut din mening just nu är: {words}."); 
                 }
-                
-                else
-                {
-                    x = true;
-                    return new[] { close }; // en kommentar
-                }
+                words = $"{words} {close}";  
+                    
 
             }
         }
