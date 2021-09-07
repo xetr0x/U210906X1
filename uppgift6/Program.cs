@@ -12,9 +12,9 @@ namespace uppgift6
             int number = rndnr.Next(1, 22);  //väljer en random siffra mellan 1 och 21
             while (true)
             {
-                int anwser = Convert.ToInt32(Console.ReadLine()); //Man skriver in numret och den convertar den från string till int
+                int answer = Convert.ToInt32(Console.ReadLine()); //Man skriver in numret och den convertar den från string till int
 
-                if (anwser == number )
+                if (answer == number )
                 {
                     Console.WriteLine($"bra gissat, du svarade rätt, talet är {number}");
                     break;  //Hela loopen "breakas" och därmed avslutas om kravet i if satsen uppnås
