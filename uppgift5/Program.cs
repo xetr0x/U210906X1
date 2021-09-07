@@ -8,13 +8,13 @@ namespace uppgift5
         {
 
              bool x = true;
-            while (x == true)  //crash 
+            while (x == true)  
                 
             {
                 Console.WriteLine("skriv Avsluta för att avsluta");
-                string close = Console.ReadLine();
+                string close = Console.ReadLine();                                    
 
-                if ( close == "Avlsuta" && close == "avsluta" && close == "AVSLUTA" )
+                if ( close == "Avlsuta" || close == "avsluta" || close == "AVSLUTA" ) //If the person writes "avsluta" the program closes. 
                 {
                     x = false;
                 }
@@ -22,6 +22,7 @@ namespace uppgift5
                 else
                 {
                     x = true;
+                    return new[] { close };
                 }
 
             }
